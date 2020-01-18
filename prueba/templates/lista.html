@@ -1,0 +1,31 @@
+<div class="content">
+    <br>
+    <div class="page-content-wrapper">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="text-center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr style="color:#0E2EB0">
+                                <th>Titulo</th>
+                                <th>Precio</th>
+                                <th>Vendidos</th>
+                                <th>Envio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for productos in productos_list %}
+                            <tr>
+                                <td>{{ productos.titulo }}</td>
+                                <td>{{productos.precio }}</td>
+                                <td style="text-align: center;">{{productos.vendidas}}</td>
+                                <td>{{productos.envio}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
